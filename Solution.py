@@ -14,8 +14,9 @@ class Solution:
 
     def output_paths(self):
         """
-        This method must be filled in by you. You may add other methods and subclasses as you see fit,
-        but they must remain within the Solution class.
+        all we have to do is max out our revenue by keeping all clients subscribed the client unsubscribes if the path we 
+        give them is longer than the shortest path from the source. routing delay is the distance from A to B
+        so we just have to do BFS from source to client, we also have inf bandwidth so we just gotta give the path
         """
         paths, bandwidths, priorities = {}, {}, {}
         # Note: You do not need to modify all of the above. For Problem 1, only the paths variable needs to be modified. If you do modify a variable you are not supposed to, you might notice different revenues outputted by the Driver locally since the autograder will ignore the variables not relevant for the problem.

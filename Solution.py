@@ -18,8 +18,8 @@ class Solution:
         give them is longer than the shortest path from the source. routing delay is the distance from A to B
         so we just have to do BFS from source to client, we also have inf bandwidth so we just gotta give the path
         """
-
-        paths, bandwidths, priorities = {}, {}, {}
+        paths = bfs_path(self.graph, self.source, self.clients) #we alr have bfs from traversals so this should work will submit but commit beforehand -FY
+        bandwidths, priorities = {}, {}
         # Note: You do not need to modify all of the above. For Problem 1, only the paths variable needs to be modified. If you do modify a variable you are not supposed to, you might notice different revenues outputted by the Driver locally since the autograder will ignore the variables not relevant for the problem.
         # WARNING: DO NOT MODIFY THE LINE BELOW, OR BAD THINGS WILL HAPPEN
         return (paths, bandwidths, priorities)

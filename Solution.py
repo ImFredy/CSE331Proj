@@ -18,6 +18,9 @@ class Solution:
         give them is longer than the shortest path from the source. routing delay is the distance from A to B
         so we just have to do BFS from source to client, we also have inf bandwidth so we just gotta give the path
         """
+        """
+        Prob 2: going to submit our answer for p1 to see where we at commiting now for fresh start
+        """
         clients = list(self.info["list_clients"]) #correction this will give me the client ids so ill submit this since it keeps saying im giving strings and not int. I found this in utlitly.py checking if it works - Fy
         paths = bfs_path(self.graph, self.isp, clients) #Bfs path will take the graph, use isp as starting node and find a path for every client, going to submit -FY
         bandwidths, priorities = {}, {}
